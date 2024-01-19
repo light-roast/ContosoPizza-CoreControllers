@@ -26,9 +26,21 @@ public class PizzaController : ControllerBase
         return pizza;
     }
 
-    // POST action
+    [HttpPost]
+    public IActionResult Create(Pizza pizza)
+    {            
+        // This code will save the pizza and return a result
+    }
 
-    // PUT action
+    [HttpPut("{id}")]
+    public IActionResult Update(int id, Pizza pizza)
+    {
+        // This code will update the pizza and return a result
+    }
 
-    // DELETE action
+    [HttpDelete("{id}")]
+    public IActionResult Delete(int id)
+    {
+        // This code will delete the pizza and return a result
+    }
 }
